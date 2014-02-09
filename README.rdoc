@@ -13,3 +13,8 @@ redmine:plugins:migrate` to create database tables.
 
 Enable the 'Canned Responses' module for projects you need this
 feature in.
+
+= Note on the Fork
+
+This fork was created for use in ProCommerz production process, so that canned texts can be used 
+more across the whole workflow, not just for issue updates.
