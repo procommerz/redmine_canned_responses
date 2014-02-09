@@ -13,7 +13,11 @@ class CannedResponse < ActiveRecord::Base
   end
   
   def is_global
-    @is_global
+    global?
+  end
+  
+  def is_global?
+    is_global
   end
   
   def is_global=(value)
@@ -27,6 +31,6 @@ class CannedResponse < ActiveRecord::Base
   private
   
   def set_global_property
-    project_id = nil if @is_global
+    project = project_id = nil if @is_global
   end
 end
