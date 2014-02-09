@@ -78,6 +78,7 @@ class CannedResponsesController < ApplicationController
       end
     end
     @canned_responses = CannedResponse.global unless @project
+
   rescue ActiveRecord::RecordNotFound
     render_404
   end

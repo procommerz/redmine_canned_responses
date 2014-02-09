@@ -1,5 +1,5 @@
 <%= render :partial => 'canned_responses/list',
-    :locals => { :canned_responses => @project.canned_responses,
+    :locals => { :canned_responses => @project.canned_responses, :in_project => true,
       :box => true } %>
 
 <p>

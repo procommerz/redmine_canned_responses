@@ -4,15 +4,15 @@
      :method => @canned_response.new_record? ? 'post' : 'put' } do |f| %>
 <%= error_messages_for 'canned_response' %>
 <div class="box tabular">
-  <%= hidden_field_tag :project_id, @canned_response.project_id %>
+  <%# hidden_field_tag :project_id, @canned_response.project_id %>
   <p><%= f.text_field :title, :required => true,
          :label => :field_canned_response_title, :size => 60 %></p>
   <p><%= f.text_area :text, :required => true,
          :label => :field_canned_response_text,
          :cols => 60, :rows => 15,
          :class => 'wiki-edit', :accesskey => accesskey(:edit) %></p>
-   <p><%= f.check_box :is_global, 
-         :label => :label_canned_response_is_global, :value => "1" %></p>         
+  <p><%= f.text_field :project_id, :required => true,
+      :label => :label_edit_canned_response_project_id, :size => 3 %></p>
 </div>
 <p>
   <%= submit_tag l(:button_save) %>

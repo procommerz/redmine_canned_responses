@@ -1,5 +1,5 @@
 <% if canned_responses.empty? %>
-  <p class="nodata"><%= l(:label_no_data) %></p>
+  <p class="nodata"><%= l(:notice_canned_response_no_project_templates) %></p>
 <% else %>
   <div class="<%= (box ||= false) ? 'box' : ''%>">
     <% canned_responses.each do |cr| %>
@@ -11,4 +11,17 @@
       </div>
     <% end %>
   </div>
+<% end %>
+
+<% if defined?(in_project) %>
+
+    <% CannedResponse.global.each do |cr| %>
+        <div class="canned-response">
+          <div class="contextual"><%= manage_canned_response_links cr %></div>
+          <h3><%= link_to cr.title, cr %></h3>
+          <%= textilizable cr, :text %>
+          <hr/>
+        </div>
+    <% end %>
+
 <% end %>

@@ -9,10 +9,14 @@ en:
   label_new_canned_response: New text template
   label_new_global_canned_response: New global text template
   label_edit_canned_response: Edit text template
+  label_insert_canned_response: Insert text template
+  label_canned_response_is_global: Is Global
+  label_edit_canned_response_project_id: Project ID (empty for global)
   field_canned_response_title: Title
   field_canned_response_text: Templete text
   notice_canned_response_created: Canned successfully
   notice_canned_response_updated: Re-canned successfully
   notice_canned_response_deleted: Template trashed successfully
-  label_insert_canned_response: Insert text template
-  label_canned_response_is_global: Is Global
+  notice_canned_response_no_project_templates: No project-specific templates set
+
+
