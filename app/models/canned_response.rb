@@ -11,10 +11,14 @@ class CannedResponse < ActiveRecord::Base
   end
   
   def is_global
-    global?
+    @is_global
   end
   
   def is_global=(value)
-    project_id = nil if value
+    if value
+      @is_global = true
+    else
+      @is_global = false
+    end
   end  
 end
