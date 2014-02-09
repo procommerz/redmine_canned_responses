@@ -15,3 +15,4 @@ en:
   notice_canned_response_updated: Re-canned successfully
   notice_canned_response_deleted: Template trashed successfully
   label_insert_canned_response: Insert text template
+  label_canned_response_is_global: Is Global
