@@ -10,8 +10,8 @@ class CannedResponse < ActiveRecord::Base
     project.nil?
   end
   
-  def is_global?
-    global
+  def is_global
+    global?
   end
   
   def is_global=(value)
