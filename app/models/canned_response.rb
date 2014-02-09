@@ -15,7 +15,6 @@ class CannedResponse < ActiveRecord::Base
   end
   
   def is_global=(value)
-    if value
-      project_id = nil
+    project_id = nil if value
   end  
 end
