@@ -27,6 +27,6 @@ class CannedResponse < ActiveRecord::Base
   private
   
   def set_global_property
-    product_id = nil if @is_global
+    project_id = nil if @is_global
   end
 end
